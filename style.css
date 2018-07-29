@@ -1,0 +1,110 @@
+/*style.css*/
+
+body{
+  width:100%;
+  background-color: #eee;
+}
+section{
+  background: #fff;
+}
+
+#top {
+  width: 100%;
+  height: 500px;
+  background: url(about_bg_img.jpg) no-repeat;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+h2{
+  text-align:center;
+  font-size: 1.8rem;
+  padding:3%;
+}
+
+
+.box_group {
+    margin: 0 auto;
+    width: 95%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .box {
+      margin: 0 1%;
+      background: grey;
+      width: 33%;
+      display: inline-block;
+      height: 250px;
+      text-align: center;
+      box-sizing: border-box;
+}
+.box .box-title {
+    font-size: 1.2em;
+    background: lightgrey;
+    padding: 5%;
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.box p {
+    padding: 15px 20px;
+    margin: 0;
+    color: #fff;
+}
+
+footer {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #eee;
+  width:100%;
+  margin: 0 auto;
+}
+
+.button {
+  width:40%;
+   font-size:0.8rem;
+   text-align:center;
+   padding:8px 0 10px;
+   color:#fff;
+   background-color:grey;
+   border-radius:5px;
+   margin: 2% auto;
+}
+
+
+.button p{
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px){
+  .button {
+    width:50%;
+     font-size:1.5rem;
+}
+     #top {
+       height: 250px;
+     }
+  .box_group {
+    display: block;
+  }
+  .box {
+    display:block;
+    margin: 10% auto;
+    width: 75%;
+  }
+}
+
+/* PC */
+@media (min-width: 769px){
+  .button:hover {
+    background-color: lightgrey;
+  }
+}
